@@ -1,12 +1,28 @@
 package Problem_121__Best_Time_to_Buy_and_Sell_Stock.Java;
 
-public class TestDemo {
-    public static void main(String[] args) {
-        int[] prices1 = new int[]{7,1,5,3,6,4};
-        int[] prices2 = new int[]{7,6,4,3,1};
+import static org.junit.Assert.assertEquals;
 
-        System.out.println("Prices1's profit is: " + Solution1.maxProfit(prices1));
-        System.out.println("Prices2's profit is: " + Solution1.maxProfit(prices2));
+import org.junit.Test;
+
+public class TestDemo {
+
+    // Solution1 solution = new Solution1();
+    Solution2 solution = new Solution2();
+    // Solution3 solution = new Solution3();
+
+    @Test
+    public void maxProfitTest_01() {
+        int[] prices = { 7, 1, 5, 3, 6, 4 };
+        int output = 5;
+
+        assertEquals(output, solution.maxProfit(prices));
+    }
+
+    @Test
+    public void maxProfitTest_02() {
+        int[] prices = { 7, 6, 4, 3, 1 };
+        int output = 0;
+
+        assertEquals(output, solution.maxProfit(prices));
     }
 }
-
