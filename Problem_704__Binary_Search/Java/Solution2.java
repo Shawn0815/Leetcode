@@ -1,7 +1,7 @@
 package Problem_704__Binary_Search.Java;
 
 public class Solution2 {
-    public static int search(int[] nums, int target) {
+    public int search(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
 
         // 當搜尋區間還有效（left <= right）就持續搜尋

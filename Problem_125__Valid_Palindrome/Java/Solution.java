@@ -1,6 +1,6 @@
 package Problem_125__Valid_Palindrome.Java;
 
-public class Solution2 {
+public class Solution {
     public boolean isPalindrome(String s) {
         // 建立左指標與右指標
         int left = 0, right = s.length() - 1;
@@ -33,4 +33,3 @@ public class Solution2 {
         return true;
     }
 }
-

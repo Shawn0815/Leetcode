@@ -3,7 +3,7 @@ package Problem_20__Valid_Parentheses.Java;
 import java.util.Stack;
 
 public class Solution2 {
-    public static boolean isValid(String s) {
+    public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 
         // 依序loop string 中的每個字元

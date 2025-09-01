@@ -1,16 +1,28 @@
 package Problem_704__Binary_Search.Java;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 public class TestDemo {
-    public static void main(String[] args) {
-        int[] nums = new int[]{-1,0,3,5,9,12};
+
+    Solution solution = new Solution();
+    // Solution1 solution = new Solution1();
+    // Solution2 solution = new Solution2();
+
+    @Test
+    public void searchTest_01() {
+        int[] nums = { -1, 0, 3, 5, 9, 12 };
         int target = 9;
 
-        // int[] nums = new int[]{-1,0,3,5,9,12};
-        // int target = 2;
+        assertEquals(4, solution.search(nums, target));
+    }
 
-        // int[] nums = new int[]{-1,0,2,4,6,8};
-        // int target = 4;
+    @Test
+    public void searchTest_02() {
+        int[] nums = { -1, 0, 3, 5, 9, 12 };
+        int target = 2;
 
-        System.out.println(Solution2.search(nums, target));
+        assertEquals(-1, solution.search(nums, target));
     }
 }
