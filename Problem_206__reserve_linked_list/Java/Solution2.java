@@ -1,4 +1,4 @@
-package Problme_206__reserve_linked_list.Java;
+package Problem_206__reserve_linked_list.Java;
 
 public class Solution2 {
     

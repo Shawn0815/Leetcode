@@ -1,11 +1,13 @@
 package Problem_347__Top_K_Frequent_Elements.Java;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
-public class Solution3 {
+public class Solution {
     
     public int[] topKFrequent(int[] nums, int k) {
 

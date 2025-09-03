@@ -1,4 +1,4 @@
-package Problme_206__reserve_linked_list.Java;
+package Problem_206__reserve_linked_list.Java;
 
 public class TestDemo {
     public static void main(String[] args) {
