@@ -15,7 +15,9 @@ public class Solution1 {
 
         // 每次找出最大的兩顆石頭來撞擊
         while (list.size() > 1) {
+            
             Collections.sort(list);
+            
             int largest_1 = list.remove(list.size() - 1); // 最重的
             int largest_2 = list.remove(list.size() - 1); // 第二重的
 

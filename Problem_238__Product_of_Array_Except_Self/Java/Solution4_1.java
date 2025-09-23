@@ -1,15 +1,19 @@
 package Problem_238__Product_of_Array_Except_Self.Java;
 
-public class Solution {
+import java.util.Arrays;
+
+public class Solution4_1 {
     
     public int[] productExceptSelf(int[] nums) {
         
         int[] result = new int[nums.length];
-        
-        result[0] = 1;
+        Arrays.fill(result, 1);
 
-        for (int i = 1; i < nums.length; i++) {
-            result[i] = result[i - 1] * nums[i - 1];
+        int prefixProduct = 1;
+
+        for (int i = 0; i < nums.length; i++) {
+            result[i] *= prefixProduct;
+            prefixProduct *= nums[i];
         }
 
         int suffixProduct = 1;

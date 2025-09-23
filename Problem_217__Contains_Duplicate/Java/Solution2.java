@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Solution2 {
     public boolean containsDuplicate(int[] nums) {
+        
         // 先把陣列排序，重複的數字會排在一起
         Arrays.sort(nums);
 

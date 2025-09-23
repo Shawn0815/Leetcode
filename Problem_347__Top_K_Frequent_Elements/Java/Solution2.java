@@ -12,7 +12,7 @@ public class Solution2 {
         Map<Integer, Integer> frequencyMap = arrayToMapWithFreqency(nums);
         
         // 建立一個 Min heap，其中每個元素為 map 中的 entry（以 map 的 value 作為排序，升序）
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(Comparator.comparingInt(a -> a.getValue()));
+        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(Map.Entry.comparingByValue());
 
         // 將 map 中的資料一一加入 heap 中
         for (Map.Entry<Integer, Integer> entry: frequencyMap.entrySet()) {

@@ -6,10 +6,10 @@ import org.junit.Test;
 
 public class TestDemo {
     
-    // Solution solution = new Solution();
+    Solution solution = new Solution();
     // Solution1 solution = new Solution1();
     // Solution2 solution = new Solution2();
-    Solution3 solution = new Solution3();
+    // Solution3 solution = new Solution3();
 
     @Test
     public void topKFrequentTest_01() {

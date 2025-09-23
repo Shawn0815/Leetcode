@@ -13,7 +13,7 @@ public class Solution2 {
             A[i][1] = i; // 元素1: 索引
         }
 
-        // 根據值進行排序
+        // 根據值進行排序（升序）
         Arrays.sort(A, Comparator.comparingInt(a -> a[0]));
 
         // 利用雙指針，最左到最右加起來檢查是否 = target

@@ -6,8 +6,9 @@ import java.util.List;
 
 public class Solution2 {
     public boolean canAttendMeetings(List<Interval> intervals) {
-        // 將會議依照「開始時間」排序
-        Collections.sort(intervals, Comparator.comparingInt(i -> i.start));
+        
+        // 將會議依照「開始時間」排序（升序）
+        Collections.sort(intervals, Comparator.comparingInt((Interval i) -> i.start));
 
         // 檢查相鄰兩個會議是否有重疊
         for (int i = 0; i < intervals.size() - 1; i++) {

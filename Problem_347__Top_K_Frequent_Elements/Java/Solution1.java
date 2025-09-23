@@ -21,7 +21,7 @@ public class Solution1 {
         }
 
         // 將 list 以 value 作為排序
-        list.sort(Comparator.comparingInt((Map.Entry<Integer, Integer> a) -> a.getValue()).reversed());
+        list.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
 
         // 建立大小為 K 的回傳 array
         int[] topK = new int[k];
