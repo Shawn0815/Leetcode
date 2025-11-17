@@ -5,7 +5,9 @@ import static org.junit.Assert.assertArrayEquals;
 import org.junit.Test;
 
 public class TestDemo {
+    
     Solution solution = new Solution();
+
     // Solution1 solution = new Solution1();
     // Solution2 solution = new Solution2();
     // Solution3 solution = new Solution3();

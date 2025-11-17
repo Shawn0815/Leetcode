@@ -4,7 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Solution3 {
-    public static int maxDepth(TreeNode root) {
+    
+    public int maxDepth(TreeNode root) {
         // 如果根節點為 null，則樹的深度為 0
         if (root == null) {
             return 0;

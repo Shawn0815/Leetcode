@@ -1,19 +1,45 @@
 package Problem_104__Maximum_Depth_of_Binary_Tree.Java;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 public class TestDemo {
-    public static void main(String[] args) {
-        // Depth: 2
-        TreeNode node_4 = new TreeNode(4, null, null);
 
-        // Depth: 1
-        TreeNode node_2 = new TreeNode(2, null, null);
-        TreeNode node_3 = new TreeNode(3, node_4, null);
-        
-        // Depth: 0
-        TreeNode root = new TreeNode(1, node_2, node_3);
+    Solution solution = new Solution();
+    
+    @Test
+    public void maxDepthTest_01() {
 
-        int max_depth = Solution1.maxDepth(root);
+        TreeNode root = new TreeNode(3);
+        TreeNode node1 = new TreeNode(9);
+        TreeNode node2 = new TreeNode(20);
+        TreeNode node3 = new TreeNode(15);
+        TreeNode node4 = new TreeNode(7);
 
-        System.out.println(max_depth);
+        root.left = node1;
+        root.right = node2;
+        node2.left = node3;
+        node2.right = node4;
+
+        int output = solution.maxDepth(root);
+        int expected = 3;
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void maxDepthTest_02() {
+
+        TreeNode root = new TreeNode(1);
+        TreeNode node1 = new TreeNode(2);
+
+
+        root.right = node1;
+
+        int output = solution.maxDepth(root);
+        int expected = 2;
+
+        assertEquals(expected, output);
     }
 }

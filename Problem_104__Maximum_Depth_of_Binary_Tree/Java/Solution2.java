@@ -3,7 +3,8 @@ package Problem_104__Maximum_Depth_of_Binary_Tree.Java;
 import java.util.Stack;
 
 public class Solution2 {
-    public static int maxDepth(TreeNode root) {
+    
+    public int maxDepth(TreeNode root) {
         // 空樹的深度是 0
         if (root == null) {
             return 0;
@@ -39,7 +40,7 @@ public class Solution2 {
     }
 
     // 自訂 Pair 類別，用來存節點與它對應的深度
-    private static class Pair {
+    private class Pair {
         TreeNode node;
         int depth;
 

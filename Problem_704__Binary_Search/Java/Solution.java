@@ -1,26 +1,28 @@
 package Problem_704__Binary_Search.Java;
 
 public class Solution {
+    
     public int search(int[] nums, int target) {
-        return binarySearch(0, nums.length - 1, nums, target);
+
+        return binarySearch(nums, target, 0, nums.length - 1);
     }
 
-    public int binarySearch(int left, int right, int[] nums, int target) {
-        int middle = (left + right) / 2;
 
-        // 結束條件：沒找到
+    public int binarySearch(int[] nums, int target, int left, int right) {
+
         if (left > right) {
             return -1;
         }
 
-        // 搜尋 target
+        int middle = (left + right) / 2;
+        
         if (target < nums[middle]) {
-            return binarySearch(left, middle - 1, nums, target); // 改搜尋左半
+            return binarySearch(nums, target, left, middle - 1);
         }
         else if (target > nums[middle]) {
-            return binarySearch(middle + 1, right, nums, target); // 改搜尋右半
+            return binarySearch(nums, target, middle + 1, right);
         }
 
-        return middle; // 搜尋到目標
+        return middle;
     }
 }
