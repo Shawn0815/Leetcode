@@ -1,6 +1,6 @@
 package Problem_2__Add_Two_Numbers.Java;
 
-public class Solution {
+public class Solution1 {
     
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
