@@ -6,17 +6,19 @@ import java.util.PriorityQueue;
 
 public class Solution2 {
     public int[] topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
 
         // 把 array 轉成 HashMap（key=數字，value=出現次數）
-        Map<Integer, Integer> frequencyMap = arrayToMapWithFreqency(nums);
+        for (int num: nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
         
         // 建立一個 Min heap，其中每個元素為 map 中的 entry（以 map 的 value 作為排序，升序）
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(Map.Entry.comparingByValue());
+        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
 
         // 將 map 中的資料一一加入 heap 中
-        for (Map.Entry<Integer, Integer> entry: frequencyMap.entrySet()) {
-            
-            minHeap.add(entry);
+        for (Map.Entry<Integer, Integer> entry: map.entrySet()) {
+            minHeap.offer(entry);
 
             // heap 維持前 K 大的元素
             if (minHeap.size() > k) {
@@ -33,18 +35,6 @@ public class Solution2 {
         }
 
         return topK;
-
-    }
-
-    public Map<Integer, Integer> arrayToMapWithFreqency(int[] nums) {
-        
-        Map<Integer, Integer> map = new HashMap<>();
-
-        for (int num: nums) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
-        }
-
-        return map;
 
     }
 }

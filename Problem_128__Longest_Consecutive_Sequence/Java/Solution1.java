@@ -3,9 +3,7 @@ package Problem_128__Longest_Consecutive_Sequence.Java;
 import java.util.Arrays;
 
 public class Solution1 {
-
     public int longestConsecutive(int[] nums) {
-
         // 如果 nums 為空陣列，直接回傳 0
         if (nums.length == 0) {
             return 0;
@@ -20,7 +18,6 @@ public class Solution1 {
 
         // 從第二個數字開始遍歷，檢查是否為連續數字
         for (int i = 1; i < nums.length; i++) {
-
             // 如果跟前一個數字一樣，跳過
             if (nums[i] == nums[i - 1]) {
                 continue;

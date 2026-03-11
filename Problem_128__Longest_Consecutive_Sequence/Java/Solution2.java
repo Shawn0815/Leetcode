@@ -4,9 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Solution2 {
-
     public int longestConsecutive(int[] nums) {
-
         // 如果 nums 為空陣列，直接回傳 0
         if (nums.length == 0) {
             return 0;
@@ -24,7 +22,6 @@ public class Solution2 {
 
         // 遍歷每個數字，計算由他開始的連續數字個數
         for (int num: set) {
-
             // 預設每個數字的初始 count = 1
             int count = 1;
             

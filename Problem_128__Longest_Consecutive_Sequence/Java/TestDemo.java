@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class TestDemo {
 
-    Solution solution = new Solution();
+    Solution1 solution = new Solution1();
 
     @Test
     public void longestConsecutiveTest_01() {
