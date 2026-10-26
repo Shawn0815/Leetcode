@@ -1,5 +1,14 @@
 # 128. Longest Consecutive Sequence
 
+## Tags
+
+- Level: Medium
+- Leetcode: https://leetcode.com/problems/longest-consecutive-sequence/
+- Neetcode: https://neetcode.io/problems/longest-consecutive-sequence
+- Class: 🧠 Blind 75
+- Important: ⭐️⭐️⭐️
+- Company:
+
 ## Question
 
 Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.

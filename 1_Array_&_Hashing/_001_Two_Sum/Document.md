@@ -1,5 +1,14 @@
 # 1. Two Sum
 
+## Tags
+
+- Level: Easy
+- Leetcode: https://leetcode.com/problems/two-sum/
+- Neetcode: https://neetcode.io/problems/two-integer-sum
+- Class: 🧠 Blind 75
+- Important: ⭐️⭐️⭐️
+- Company:
+
 ## Question
 
 You are given an array of integers nums and an integer target, ==return indices of the two numbers such that they add up to target==.

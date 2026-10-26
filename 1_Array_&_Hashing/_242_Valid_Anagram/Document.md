@@ -1,5 +1,14 @@
 # 242. Valid Anagram
 
+## Tags
+
+- Level: Easy
+- Leetcode: https://leetcode.com/problems/valid-anagram/
+- Neetcode: https://neetcode.io/problems/is-anagram
+- Class: 🧠 Blind 75
+- Important: ⭐️⭐️⭐️
+- Company:
+
 ## Question
 
 Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.

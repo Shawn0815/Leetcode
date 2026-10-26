@@ -1,5 +1,14 @@
 # 238. Product of Array Except Self
 
+## Tags
+
+- Level: Medium
+- Leetcode: https://leetcode.com/problems/product-of-array-except-self/
+- Neetcode: https://neetcode.io/problems/products-of-array-discluding-self
+- Class: 🧠 Blind 75
+- Important: ⭐️
+- Company:
+
 ## Question
 
 Given an integer array `nums`, return an array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`.

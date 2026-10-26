@@ -1,5 +1,14 @@
 # 49. Group Anagrams
 
+## Tags
+
+- Level: Medium
+- Leetcode: https://leetcode.com/problems/group-anagrams/
+- Neetcode: https://neetcode.io/problems/anagram-groups
+- Class: 🧠 Blind 75
+- Important: ⭐️⭐️⭐️
+- Company:
+
 ## Question
 
 Given an array of strings `strs`, group the anagrams together.

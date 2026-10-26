@@ -1,5 +1,14 @@
 # 271. Encode and Decode Strings
 
+## Tags
+
+- Level: Medium
+- Leetcode: https://leetcode.com/problems/encode-and-decode-strings/
+- Neetcode: https://neetcode.io/problems/string-encode-and-decode
+- Class: 🧠 Blind 75
+- Important: ⭐️⭐️
+- Company:
+
 ## Question
 
 Design an algorithm to encode a list of strings to a single string.

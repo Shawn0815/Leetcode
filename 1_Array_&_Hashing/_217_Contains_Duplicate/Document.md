@@ -1,5 +1,14 @@
 # 217. Contains Duplicate
 
+## Tags
+
+- Level: Easy
+- Leetcode: https://leetcode.com/problems/contains-duplicate/
+- Neetcode: https://neetcode.io/problems/duplicate-integer
+- Class: 🧠 Blind 75
+- Important: ⭐️⭐️⭐️
+- Company:
+
 ## Question
 
 Given an integer array `nums`, return `true` if any value appears ==at least twice== in the array, and return `false` if every element is distinct.

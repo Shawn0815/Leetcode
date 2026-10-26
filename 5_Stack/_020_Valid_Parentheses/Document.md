@@ -1,5 +1,14 @@
 # 20. Valid Parentheses
 
+## Tags
+
+- Level: Easy
+- Leetcode: https://leetcode.com/problems/valid-parentheses/
+- Neetcode: https://neetcode.io/problems/validate-parentheses
+- Class: 🧠 Blind 75
+- Important: ⭐️⭐️⭐️
+- Company:
+
 ## Question
 
 Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.

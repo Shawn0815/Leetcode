@@ -1,5 +1,14 @@
 # 704. Binary Search
 
+## Tags
+
+- Level: Easy
+- Leetcode: https://leetcode.com/problems/binary-search/
+- Neetcode: https://neetcode.io/problems/binary-search
+- Class: 🚀 Neetcode 150
+- Important: ⭐️⭐️⭐️
+- Company:
+
 ## Question
 
 Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`.
