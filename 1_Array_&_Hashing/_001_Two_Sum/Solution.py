@@ -4,15 +4,24 @@ class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         seen = {}
 
-        for i, num in enumerate(nums):
-            complement = target - num
-
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            
             if complement in seen:
                 return [seen[complement], i]
-
-            seen[num] = i
+            else:
+                seen[nums[i]] = i
 
         return []
+                
+
+# ============================================================
+# 測試（題目的 Example），用 LeetCode: Test current problem 跑；上面寫演算法就好
+# ============================================================
+
+def any_order(x):
+    """題目說答案順序不限：只排最外層"""
+    return sorted(x, key=repr)
 
 
 if __name__ == "__main__":
@@ -26,4 +35,4 @@ if __name__ == "__main__":
 ])
 def test_twoSum(nums, target, expected):
     output = Solution().twoSum(nums, target)
-    assert output == expected
+    assert any_order(output) == any_order(expected)
