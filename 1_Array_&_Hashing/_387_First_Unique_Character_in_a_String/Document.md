@@ -6,7 +6,7 @@
 - Leetcode: https://leetcode.com/problems/first-unique-character-in-a-string/
 - Neetcode: https://neetcode.io/problems/first-unique-character-in-a-string
 - Class: 🌎 Neetcode All
-- Important: ⭐️⭐️
+- Important: ⭐️
 - Company:
 
 ## Question

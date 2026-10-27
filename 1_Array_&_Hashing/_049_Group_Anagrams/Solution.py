@@ -24,7 +24,7 @@ class Solution:
         return list(groups.values())
 
 # ============================================================
-# 測試（題目的 Example），用 LeetCode: Test current problem 跑；上面寫演算法就好
+# 測試（題目的 Example），按 VS Code 的 Run 跑；上面寫演算法就好
 # ============================================================
 
 def any_order(x):

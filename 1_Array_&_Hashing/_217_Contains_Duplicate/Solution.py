@@ -1,11 +1,22 @@
 import pytest
 
+
 class Solution:
     def containsDuplicate(self, nums: list[int]) -> bool:
-        s= set(nums)
+        seen = set()
 
-        return len(nums) != len(s)
+        for num in nums:
+            if num in seen:
+                return True
+            else:
+                seen.add(num)
 
+        return False
+
+
+# ============================================================
+# 測試（題目的 Example），按 VS Code 的 Run 跑；上面寫演算法就好
+# ============================================================
 
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])

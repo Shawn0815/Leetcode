@@ -6,7 +6,7 @@
 - Leetcode: https://leetcode.com/problems/valid-anagram/
 - Neetcode: https://neetcode.io/problems/is-anagram
 - Class: 🧠 Blind 75
-- Important: ⭐️⭐️⭐️
+- Important: ⭐️⭐️⭐️⭐️⭐️
 - Company:
 
 ## Question

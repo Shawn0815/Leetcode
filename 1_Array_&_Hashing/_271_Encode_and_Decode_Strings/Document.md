@@ -6,7 +6,7 @@
 - Leetcode: https://leetcode.com/problems/encode-and-decode-strings/
 - Neetcode: https://neetcode.io/problems/string-encode-and-decode
 - Class: 🧠 Blind 75
-- Important: ⭐️⭐️
+- Important: ⭐️⭐️⭐️⭐️
 - Company:
 
 ## Question

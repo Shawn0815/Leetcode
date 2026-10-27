@@ -1,29 +1,39 @@
 package _217_Contains_Duplicate;
 
-import java.util.HashSet;
-import java.util.Set;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class Solution {
-    public boolean hasDuplicate(int[] nums) {
-        Set<Integer> set = new HashSet<>();
+import java.util.*;
+import org.junit.jupiter.api.Test;
 
-        for (int num: nums) {
-            if (set.contains(num)) {
-                return true;
-            }
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        
+    }
+}
 
-            set.add(num);
-        }
 
-        return false;
+// ============================================================
+// 測試（題目的 Example），按 VS Code 的 Run 跑；上面寫演算法就好
+// ============================================================
+
+class SolutionTest {
+    private final Solution sol = new Solution();
+
+    @Test
+    void example1() {
+        int[] nums = new int[] {1, 2, 3, 1};
+        assertEquals(true, sol.containsDuplicate(nums));
     }
 
-    public static void main(String[] args) {
-        int[] nums = new int[] {1, 2, 3, 3};
-        
-        Solution sol = new Solution();
-        boolean output = sol.hasDuplicate(nums);
+    @Test
+    void example2() {
+        int[] nums = new int[] {1, 2, 3, 4};
+        assertEquals(false, sol.containsDuplicate(nums));
+    }
 
-        System.out.println(output);
+    @Test
+    void example3() {
+        int[] nums = new int[] {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
+        assertEquals(true, sol.containsDuplicate(nums));
     }
 }

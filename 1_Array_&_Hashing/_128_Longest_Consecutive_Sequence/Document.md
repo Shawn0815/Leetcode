@@ -6,7 +6,7 @@
 - Leetcode: https://leetcode.com/problems/longest-consecutive-sequence/
 - Neetcode: https://neetcode.io/problems/longest-consecutive-sequence
 - Class: 🧠 Blind 75
-- Important: ⭐️⭐️⭐️
+- Important: ⭐️⭐️⭐️⭐️
 - Company:
 
 ## Question
